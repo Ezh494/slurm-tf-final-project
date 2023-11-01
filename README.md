@@ -7,7 +7,9 @@
 
 ## Packer information
 ## Create image from Ubuntu family with preinstalled NGINX
-1. Change vars in file - /packer/nginx.pkr.hcl:
+Change vars in file 
+
+1. /packer/nginx.pkr.hcl:
 * YC_SUBNET_ID - default/test subnet ID
 * YC_ZONE - default/test zone
 * image_name - full name image - "${image_name}-${image_tag}"
@@ -15,7 +17,9 @@
 * prefix - first part new image family name, new family name - "${var.prefix}-${var.env_name}-${var.image_name}-${var.new_image_family}"
 * env_name - second part new image family name, new family name
 * new_image_family - last part new image family name
-2. Init and start packer
+
+Init and start packer
+
 * packer init
 * packer build -var 'image_tag=1' nginx.pkr.hcl
 
