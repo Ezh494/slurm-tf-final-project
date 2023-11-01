@@ -30,6 +30,7 @@ Change main vars:
 2. /terraform/PROD/DNS/prod.auto.tfvars
 * group_labels - extra labels for group DNS
 * domain - for future add records(not need now!)
+
 Init and start terraform 
 
 * terraform init (inside folder - /terraform/PROD/DNS)
@@ -42,6 +43,7 @@ Change main vars:
 * cidr_blocks - lists subnets for avalibility zone 
 2. /terraform/PROD/network/prod.auto.tfvars
 * group_labels - extra labels for group network
+
 Init and start terraform 
 
 * terraform init (inside folder - /terraform/PROD/network)
@@ -56,6 +58,7 @@ Change main vars:
 * vm_resource(vm_cpu,vm_ram,vm_sysdisk_size) - Resources virtual machines (secdisk not works now!)
 * group_labels - extra labels for group webservers
 * domain - DNS A and CNAME "WWW" records for App
+
 Init and start terraform 
 
 * terraform init (inside folder - /terraform/PROD/webservers
