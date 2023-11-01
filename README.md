@@ -14,8 +14,8 @@ Change main vars:
 * YC_ZONE - default/test zone
 * image_name - full name image - "${image_name}-${image_tag}"
 * source_image_family - source image (ansible-playbook work only Ubuntu)
-* prefix - first part new image family name, new family name - "${var.prefix}-${var.env_name}-${var.image_name}-${var.new_image_family}"
-* env_name - second part new image family name, new family name
+* prefix - first part new image family name, new family - "${var.prefix}-${var.env_name}-${var.image_name}-${var.new_image_family}"
+* env_name - second part new image family name
 * new_image_family - last part new image family name
 
 Init and start packer
