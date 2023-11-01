@@ -1,4 +1,4 @@
-# YC configuration packer and terraform
+# YC configuration packer and terraform - IaC
 ## Presettings workstation
 ### Create YC access vars with help YC-Cli or manual!!!
 * export TF_VAR_YC_FOLDER_ID=$(yc config get folder-id)
