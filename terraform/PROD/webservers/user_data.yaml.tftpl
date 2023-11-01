@@ -1,0 +1,9 @@
+#cloud-config
+ssh_pwauth: no
+users:
+  - name: yc-root
+    groups: sudo
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/bash
+    ssh-authorized-keys:
+      - ${public_ssh_key}
