@@ -7,7 +7,7 @@
 
 ## Packer information
 ## Create image from Ubuntu family with preinstalled NGINX
-Change vars in file 
+Change main vars: 
 
 1. /packer/nginx.pkr.hcl:
 * YC_SUBNET_ID - default/test subnet ID
